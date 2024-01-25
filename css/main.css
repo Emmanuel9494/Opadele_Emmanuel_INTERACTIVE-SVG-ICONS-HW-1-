@@ -290,7 +290,7 @@ span{
         #world-car{
           width: 600px;
           height:80vh;
-            margin:50px 0 70px -250px;
+            margin:50px 0 70px -150px;
             cursor: pointer;
         }
         .world-car{
@@ -314,4 +314,126 @@ margin-left: 100px;
           margin-left: -450px;  
       }
 
-     
+  
+
+      #pac-man:hover #pack-balls {
+        animation: moveBalls 3s linear infinite; 
+      }
+
+
+@keyframes moveBalls {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100px); 
+  }
+}
+
+#pac-man:hover #pack-close{
+  display: hidden;
+  animation: mouth-open 1s infinite;
+ 
+ 
+}
+
+@keyframes mouth-open {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+#pack-half{
+  display: none;
+}
+
+
+#world-car:hover  #road{
+  animation: road-track 10s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes road-track {
+  0% {
+      transform: rotate(0deg);
+  }
+  50% {
+      transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+}
+}
+
+#world-car:hover  #tires{
+  animation: tire-rim 2s linear infinite;
+  transform-origin: center
+  
+}
+
+@keyframes tire-rim {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0) rotate(-2deg); 
+  }
+}
+
+#world-car:hover #car-body{
+  animation: moveUpDown 2s ease-in-out infinite alternate;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(1%); 
+  }
+}
+
+#lamp-dance:hover #head-man{
+  animation: head-move 1s ease-in-out infinite alternate ;
+}
+
+@keyframes head-move {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(1%); 
+  }
+}
+
+#lamp-dance:hover #leg-work{
+  animation: leg-move 1s ease-in-out infinite alternate ;
+}
+
+@keyframes leg-move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(1%); 
+  }
+}
+
+#lamp-dance:hover  .cls-10s{
+  animation: lampColor 1s linear infinite;
+  opacity: 20px;
+}
+
+@keyframes lampColor {
+0% { fill: #fced213a; }
+15% { fill: #ff00003a; }
+30% { fill: #00ff0046; } 
+50% { fill: #0000ff42; } 
+60% { fill: #ff00ff38; } 
+80% { fill: #ffff00; } 
+100% { fill: #fced2138; } 
+}
