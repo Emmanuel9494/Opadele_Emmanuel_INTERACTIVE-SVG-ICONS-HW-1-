@@ -1,3 +1,13 @@
+//H1 tag js
+const Heading = document.querySelector('h1');
+
+function logHeadTagId() {
+    console.log(Heading);
+    console.log('You just hoverd over an interactive SVG icon, i lied its a H1', Heading.id);
+}
+
+Heading.addEventListener('mouseover', logHeadTagId);
+
 //Duck svg js
 console.log("JS file connected");
 

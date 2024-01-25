@@ -226,28 +226,31 @@ span{
     margin-left: -500px;
 }
  
+.analog-clock{
+  margin-left: 50px;
+}
 
 #clock{
-    width: 600px;
-    height: 500px;
-    margin:50px 0 70px -80px;
+  width: 600px;
+  height:80vh;
+    margin:50px 0 70px 0px;
     cursor: pointer;
 }
 
        #clock:hover  #short-double {
-            animation: rotate 60s linear infinite;
+            animation: rotate1 20s linear infinite;
             transform-origin: center;
         }
          #clock:hover   #long-double {
-            animation: rotate 60s linear infinite;
+            animation: rotate2 60s linear infinite;
             transform-origin: center;
         }
          #clock:hover  #second-hand{
-            animation: rotate 30s linear infinite;
+            animation: rotate3 10s linear infinite;
             transform-origin: center;
         }
 
-        @keyframes rotate {
+        @keyframes rotate1 {
             0% {
                 transform: rotate(0deg);
             }
@@ -255,8 +258,60 @@ span{
                 transform: rotate(360deg);
             }
         }
+        @keyframes rotate2 {
+          0% {
+              transform: rotate(0deg);
+          }
+          100% {
+              transform: rotate(360deg);
+          }
+      }
+      @keyframes rotate3 {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
 
         #clock-border{
             background-color: black;
         }
   
+
+        #lamp-dance{
+          width: 600px;
+          height:80vh;
+            margin:50px 0 70px 0px;
+            cursor: pointer;
+        }
+
+        #world-car{
+          width: 600px;
+          height:80vh;
+            margin:50px 0 70px -250px;
+            cursor: pointer;
+        }
+        .world-car{
+margin-left: 100px;
+        }
+
+        #pac-man{
+            margin:50px 0 70px 0px;
+            cursor: pointer;
+        }
+
+        #article-pac {
+          background-color: #ff6600;
+          font-family: Verdana;
+          width: 300px;
+          height: auto;
+          line-height: 30px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.685);
+          margin-top: 20px;
+          margin-bottom: 30px;
+          margin-left: -450px;  
+      }
+
+     
