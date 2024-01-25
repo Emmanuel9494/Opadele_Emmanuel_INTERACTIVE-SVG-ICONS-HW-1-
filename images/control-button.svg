@@ -80,15 +80,14 @@
     </linearGradient>
 
      <script>
-   console.log("JS file connected");
-    const VectorGraphic = document.querySelector('#control-button');
+    const RemoteControl = document.querySelector('#control-button');
 
     function logThisId() {
       console.log(this);
       console.log('You Played, You Paused, Thou shalt ignore the stop', this.id);
     }
 
-    VectorGraphic.addEventListener('click', logThisId);
+    RemoteControl.addEventListener('mouseover', logThisId);
   </script>
   </defs>
   <rect class="cls-1" x="293.87" y="155.47" width="209.42" height="209.42" rx="104.71" ry="104.71" transform="translate(-63.51 374.33) rotate(-47.01)"/>

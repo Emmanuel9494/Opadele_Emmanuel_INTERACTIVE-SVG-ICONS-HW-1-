@@ -65,6 +65,16 @@
         letter-spacing: .15em;
       }
     </style>
+    <script>
+    const HouseMain = document.querySelector('#House-main');
+
+function logThisId() {
+    console.log(this);
+    console.log('No party like a', this.id);
+}
+
+HouseMain.addEventListener('click', logThisId);
+    </script>
   </defs>
   <g>
     <polygon class="cls-8" points="57.04 192.6 57.04 316.6 85.04 316.6 85.04 259.6 166.04 259.6 166.04 316.6 200.04 316.6 200.04 192.6 57.04 192.6"/>
