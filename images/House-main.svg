@@ -64,7 +64,32 @@
       .cls-13 {
         letter-spacing: .15em;
       }
+#House-main:hover{
+  cursor: pointer;
+}
+      #House-main:hover  .cls-2{
+        animation: colorChange 1s linear infinite;
+      }
+
+      @keyframes colorChange {
+      0% { fill: #fcee21; }
+      15% { fill: #ff0000; }
+      30% { fill: #00ff00; } 
+      50% { fill: #0000ff; } 
+      60% { fill: #ff00ff; } 
+      80% { fill: #ffff00; } 
+      100% { fill: #fcee21; } 
+    }
+
+    #House-main:hover .cls-11{
+      animation: colorChange 1s linear infinite;
+    }
+    #House-main:hover .cls-9{
+      animation: colorChange 1s linear infinite;
+    }
     </style>
+
+
     <script>
     const HouseMain = document.querySelector('#House-main');
 
