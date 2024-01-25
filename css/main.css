@@ -220,3 +220,43 @@ span{
       transform: translate(0, 4px);
     }
   }
+
+
+.control{
+    margin-left: -500px;
+}
+ 
+
+#clock{
+    width: 600px;
+    height: 500px;
+    margin:50px 0 70px -80px;
+    cursor: pointer;
+}
+
+       #clock:hover  #short-double {
+            animation: rotate 60s linear infinite;
+            transform-origin: center;
+        }
+         #clock:hover   #long-double {
+            animation: rotate 60s linear infinite;
+            transform-origin: center;
+        }
+         #clock:hover  #second-hand{
+            animation: rotate 30s linear infinite;
+            transform-origin: center;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        #clock-border{
+            background-color: black;
+        }
+  
